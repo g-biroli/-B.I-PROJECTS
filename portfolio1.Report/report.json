@@ -27,31 +27,22 @@
       "name": "803f81949edd0b86408c",
       "visualContainers": [
         {
-          "config": "{\"name\":\"5b97a111cb15a0a7178f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":280,\"height\":280,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(fMetas.Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fMetas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total\"}},\"Function\":0},\"Name\":\"Sum(fMetas.Total)\",\"NativeReferenceName\":\"Suma de Total\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"0a9da51db2715459e260\",\"layouts\":[{\"id\":0,\"position\":{\"x\":292.2822827853063,\"y\":161.92164022847956,\"z\":0,\"width\":347.17097438818075,\"height\":333.4488014874621,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dVendedor.Vendedor\",\"active\":true}],\"Values\":[{\"queryRef\":\"Min(dProduto.Grupo Produto)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dVendedor\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dProduto\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Vendedor\"},\"Name\":\"dVendedor.Vendedor\",\"NativeReferenceName\":\"Vendedor\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Grupo Produto\"}},\"Function\":2},\"Name\":\"Min(dProduto.Grupo Produto)\",\"NativeReferenceName\":\"Recuento de Grupo Produto1\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
-          "height": 280.00,
-          "width": 280.00,
-          "x": 10.00,
-          "y": 290.00,
-          "z": 1.00
-        },
-        {
-          "config": "{\"name\":\"75d9528782acc3d19142\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dCalendario.Año\",\"active\":true},{\"queryRef\":\"fMetas.cdVendedor\"}],\"Values\":[{\"queryRef\":\"Sum(fMetas.Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dCalendario\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fMetas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Año\"},\"Name\":\"dCalendario.Año\",\"NativeReferenceName\":\"Suma de Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"cdVendedor\"},\"Name\":\"fMetas.cdVendedor\",\"NativeReferenceName\":\"cdVendedor\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total\"}},\"Function\":0},\"Name\":\"Sum(fMetas.Total)\",\"NativeReferenceName\":\"Suma de Total\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"dCalendario.Año\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dCalendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"fMetas.cdVendedor\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 280.00,
-          "width": 280.00,
-          "x": 10.00,
-          "y": 0.00,
+          "height": 333.45,
+          "width": 347.17,
+          "x": 292.28,
+          "y": 161.92,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"e77b41281261dd2fc1e5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":570,\"width\":280,\"height\":150,\"z\":2,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dVendedor.Equipe Vendas\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(fMetas.Valor)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dVendedor\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fMetas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Equipe Vendas\"},\"Name\":\"dVendedor.Equipe Vendas\",\"NativeReferenceName\":\"Equipe Vendas\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Valor\"}},\"Function\":0},\"Name\":\"Sum(fMetas.Valor)\",\"NativeReferenceName\":\"Suma de Valor\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"ff034f4aca36402cd7c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":787.652724501248,\"y\":253.8601986632942,\"z\":1,\"width\":300.5155865257375,\"height\":150.94390190790466,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dCalendario.Año\",\"active\":true},{\"queryRef\":\"dVendedor.Supervisor\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dCalendario\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dVendedor\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Año\"},\"Name\":\"dCalendario.Año\",\"NativeReferenceName\":\"Suma de Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Supervisor\"},\"Name\":\"dVendedor.Supervisor\",\"NativeReferenceName\":\"Supervisor\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"dCalendario.Año\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dCalendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"dVendedor.Supervisor\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
-          "height": 150.00,
-          "width": 280.00,
-          "x": 10.00,
-          "y": 570.00,
-          "z": 2.00
+          "height": 150.94,
+          "width": 300.52,
+          "x": 787.65,
+          "y": 253.86,
+          "z": 1.00
         }
       ],
       "width": 1280.00

@@ -70,7 +70,7 @@
       },
       {
         "name": "5b46dfef-0d10-394b-65a0-18d4fdc3c162",
-        "fromColumn": "Data",
+        "fromColumn": "Atributo",
         "fromTable": "fMetas",
         "toColumn": "Data",
         "toTable": "dCalendario"
@@ -127,7 +127,7 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Valor",
+            "name": "ValorMetas",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -141,11 +141,11 @@
             "dataType": "decimal",
             "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "5b55816f-990b-4dda-841a-9510b2727ae2",
-            "sourceColumn": "Valor",
+            "sourceColumn": "ValorMetas",
             "summarizeBy": "sum"
           },
           {
-            "name": "Data",
+            "name": "Atributo",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -159,7 +159,7 @@
             "dataType": "dateTime",
             "formatString": "Short Date",
             "lineageTag": "286fe1c3-66fb-442b-a4d8-7d2ad2a0a46d",
-            "sourceColumn": "Data",
+            "sourceColumn": "Atributo",
             "summarizeBy": "none"
           }
         ],
@@ -186,9 +186,9 @@
                 "    #\"Duplicados quitados\" = Table.Distinct(#\"Tipo cambiado3\", {\"Valor\"}),",
                 "    #\"Columnas quitadas\" = Table.RemoveColumns(#\"Duplicados quitados\",{\"Total\"}),",
                 "    #\"Tipo cambiado4\" = Table.TransformColumnTypes(#\"Columnas quitadas\",{{\"Valor\", Currency.Type}}),",
-                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado4\",{{\"Atributo\", \"Data\"}})",
+                "    #\"Columnas con nombre cambiado1\" = Table.RenameColumns(#\"Tipo cambiado4\",{{\"Valor\", \"ValorMetas\"}})",
                 "in",
-                "    #\"Columnas con nombre cambiado\""
+                "    #\"Columnas con nombre cambiado1\""
               ],
               "type": "m"
             }
@@ -508,17 +508,22 @@
             "summarizeBy": "sum"
           },
           {
-            "name": "dVendedor.Vendedor",
+            "name": "ValorTotal",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
-            "dataType": "string",
-            "lineageTag": "3abfb015-f062-4eeb-8a39-449a8e00e4a1",
-            "sourceColumn": "dVendedor.Vendedor",
-            "summarizeBy": "none"
+            "dataType": "decimal",
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "lineageTag": "f7a3e49e-620c-440c-98b0-529ac55e9d2b",
+            "sourceColumn": "ValorTotal",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "ac276910-e73a-4996-aec9-f5bf44f40ea1",
@@ -537,9 +542,12 @@
                 "    #\"Tipo cambiado1\" = Table.TransformColumnTypes(#\"Otras columnas quitadas\",{{\"cdVendedor\", type text}}),",
                 "    #\"Consultas combinadas\" = Table.NestedJoin(#\"Tipo cambiado1\", {\"cdVendedor\"}, dVendedor, {\"cdVendedor\"}, \"dVendedor\", JoinKind.LeftOuter),",
                 "    #\"Se expandió dVendedor\" = Table.ExpandTableColumn(#\"Consultas combinadas\", \"dVendedor\", {\"Vendedor\"}, {\"dVendedor.Vendedor\"}),",
-                "    #\"Tipo cambiado2\" = Table.TransformColumnTypes(#\"Se expandió dVendedor\",{{\"NFe\", type text}, {\"cdProduto\", type text}})",
+                "    #\"Tipo cambiado2\" = Table.TransformColumnTypes(#\"Se expandió dVendedor\",{{\"NFe\", type text}, {\"cdProduto\", type text}}),",
+                "    #\"Columnas quitadas\" = Table.RemoveColumns(#\"Tipo cambiado2\",{\"dVendedor.Vendedor\"}),",
+                "    #\"Personalizada agregada\" = Table.AddColumn(#\"Columnas quitadas\", \"ValorTotal\", each [QtdItens] * [ValorUnitario]),",
+                "    #\"Tipo cambiado3\" = Table.TransformColumnTypes(#\"Personalizada agregada\",{{\"ValorTotal\", Currency.Type}})",
                 "in",
-                "    #\"Tipo cambiado2\""
+                "    #\"Tipo cambiado3\""
               ],
               "type": "m"
             }

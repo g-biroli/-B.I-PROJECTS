@@ -51,9 +51,9 @@
           }
         ],
         "expression": [
-          "let\r",
-          "    Origen = List.Dates\r",
-          "in\r",
+          "let",
+          "    Origen = List.Dates",
+          "in",
           "    Origen"
         ],
         "kind": "m",
@@ -70,7 +70,7 @@
       },
       {
         "name": "5b46dfef-0d10-394b-65a0-18d4fdc3c162",
-        "fromColumn": "Atributo",
+        "fromColumn": "Data",
         "fromTable": "fMetas",
         "toColumn": "Data",
         "toTable": "dCalendario"
@@ -145,7 +145,7 @@
             "summarizeBy": "sum"
           },
           {
-            "name": "Atributo",
+            "name": "Data",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -159,7 +159,7 @@
             "dataType": "dateTime",
             "formatString": "Short Date",
             "lineageTag": "286fe1c3-66fb-442b-a4d8-7d2ad2a0a46d",
-            "sourceColumn": "Atributo",
+            "sourceColumn": "Data",
             "summarizeBy": "none"
           }
         ],
@@ -185,9 +185,10 @@
                 "    #\"Tipo cambiado3\" = Table.TransformColumnTypes(#\"Columnas reordenadas\",{{\"Valor\", type number}, {\"Total\", Currency.Type}}),",
                 "    #\"Duplicados quitados\" = Table.Distinct(#\"Tipo cambiado3\", {\"Valor\"}),",
                 "    #\"Columnas quitadas\" = Table.RemoveColumns(#\"Duplicados quitados\",{\"Total\"}),",
-                "    #\"Tipo cambiado4\" = Table.TransformColumnTypes(#\"Columnas quitadas\",{{\"Valor\", Currency.Type}})",
+                "    #\"Tipo cambiado4\" = Table.TransformColumnTypes(#\"Columnas quitadas\",{{\"Valor\", Currency.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado4\",{{\"Atributo\", \"Data\"}})",
                 "in",
-                "    #\"Tipo cambiado4\""
+                "    #\"Columnas con nombre cambiado\""
               ],
               "type": "m"
             }
@@ -410,6 +411,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
           }
         ],
         "columns": [
@@ -439,11 +444,10 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "dataType": "string",
             "lineageTag": "a386006f-bf93-40c3-b155-972f252e23c5",
             "sourceColumn": "NFe",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "cdProduto",
@@ -453,8 +457,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "dataType": "string",
             "lineageTag": "70987dac-d0f1-4bdf-9cbe-b9000e6ce123",
             "sourceColumn": "cdProduto",
             "summarizeBy": "none"
@@ -467,8 +470,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "dataType": "string",
             "lineageTag": "d5483ac7-f4dd-4041-82e4-17fbb399e144",
             "sourceColumn": "cdVendedor",
             "summarizeBy": "none"
@@ -504,6 +506,19 @@
             "lineageTag": "ad1a8680-0527-4b1b-9838-3a4c01c6d5c8",
             "sourceColumn": "ValorUnitario",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "dVendedor.Vendedor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3abfb015-f062-4eeb-8a39-449a8e00e4a1",
+            "sourceColumn": "dVendedor.Vendedor",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "ac276910-e73a-4996-aec9-f5bf44f40ea1",
@@ -518,9 +533,13 @@
                 "    Planilha1_Sheet = Origen{[Item=\"Planilha1\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"DataEmissao\", type date}, {\"NFe\", Int64.Type}, {\"cdProduto\", Int64.Type}, {\"Produto\", type text}, {\"Grupo Produto\", type text}, {\"Linha Produto\", type text}, {\"cdVendedor\", Int64.Type}, {\"Vendedor\", type text}, {\"Supervisor\", type text}, {\"Gerente\", type text}, {\"Equipe Vendas\", type text}, {\"QtdItens\", Int64.Type}, {\"ValorUnitario\", Currency.Type}}),",
-                "    #\"Otras columnas quitadas\" = Table.SelectColumns(#\"Tipo cambiado\",{\"DataEmissao\", \"NFe\", \"cdProduto\", \"cdVendedor\", \"QtdItens\", \"ValorUnitario\"})",
+                "    #\"Otras columnas quitadas\" = Table.SelectColumns(#\"Tipo cambiado\",{\"DataEmissao\", \"NFe\", \"cdProduto\", \"cdVendedor\", \"QtdItens\", \"ValorUnitario\"}),",
+                "    #\"Tipo cambiado1\" = Table.TransformColumnTypes(#\"Otras columnas quitadas\",{{\"cdVendedor\", type text}}),",
+                "    #\"Consultas combinadas\" = Table.NestedJoin(#\"Tipo cambiado1\", {\"cdVendedor\"}, dVendedor, {\"cdVendedor\"}, \"dVendedor\", JoinKind.LeftOuter),",
+                "    #\"Se expandió dVendedor\" = Table.ExpandTableColumn(#\"Consultas combinadas\", \"dVendedor\", {\"Vendedor\"}, {\"dVendedor.Vendedor\"}),",
+                "    #\"Tipo cambiado2\" = Table.TransformColumnTypes(#\"Se expandió dVendedor\",{{\"NFe\", type text}, {\"cdProduto\", type text}})",
                 "in",
-                "    #\"Otras columnas quitadas\""
+                "    #\"Tipo cambiado2\""
               ],
               "type": "m"
             }
@@ -773,6 +792,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
           }
         ],
         "columns": [
@@ -784,8 +807,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "dataType": "string",
             "lineageTag": "85141819-df41-40b4-8b19-177118fca88b",
             "sourceColumn": "cdProduto",
             "summarizeBy": "none"
@@ -843,9 +865,10 @@
                 "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"DataEmissao\", type date}, {\"NFe\", Int64.Type}, {\"cdProduto\", Int64.Type}, {\"Produto\", type text}, {\"Grupo Produto\", type text}, {\"Linha Produto\", type text}, {\"cdVendedor\", Int64.Type}, {\"Vendedor\", type text}, {\"Supervisor\", type text}, {\"Gerente\", type text}, {\"Equipe Vendas\", type text}, {\"QtdItens\", Int64.Type}, {\"ValorUnitario\", Currency.Type}}),",
                 "    #\"Otras columnas quitadas\" = Table.SelectColumns(#\"Tipo cambiado\",{\"cdProduto\", \"Produto\", \"Grupo Produto\", \"Linha Produto\"}),",
-                "    #\"Duplicados quitados\" = Table.Distinct(#\"Otras columnas quitadas\", {\"cdProduto\"})",
+                "    #\"Duplicados quitados\" = Table.Distinct(#\"Otras columnas quitadas\", {\"cdProduto\"}),",
+                "    #\"Tipo cambiado1\" = Table.TransformColumnTypes(#\"Duplicados quitados\",{{\"cdProduto\", type text}})",
                 "in",
-                "    #\"Duplicados quitados\""
+                "    #\"Tipo cambiado1\""
               ],
               "type": "m"
             }

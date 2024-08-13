@@ -1,0 +1,5643 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Circuits\",\"Constructors\",\"Drivers\",\"Races\",\"Results\",\"Medidas\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.131.1203.0 (24.07)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "circuit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "circuit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tour": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "trip": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "route": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "journey": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "path": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "course": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "track": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "trail": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "circuit.circuit_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits",
+                    "ConceptualProperty": "circuitId"
+                  }
+                },
+                "NameType": "Identifier",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "circuit id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "circuitId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "circuit identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "circuit identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "circuit identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "circuit credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "circuit.country": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits",
+                    "ConceptualProperty": "country"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "country": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "nation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "País": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "circuit.flag_url": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits",
+                    "ConceptualProperty": "flag_url"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "flag url": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "flag_url": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "url": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "flag website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "flag site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "flag web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.589
+                    }
+                  },
+                  {
+                    "web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.571
+                    }
+                  }
+                ]
+              },
+              "circuit.location": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits",
+                    "ConceptualProperty": "location"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "location": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "locality": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "placement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "scene": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "venue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "place": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "setting": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "spot": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "Localização": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "circuit.name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits",
+                    "ConceptualProperty": "name"
+                  }
+                },
+                "NameType": "Name",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "Circuito": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "circuit.picture_url": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Circuits",
+                    "ConceptualProperty": "picture_url"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "picture url": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "picture_url": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "url": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "picture website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "picture site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "picture web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.589
+                    }
+                  },
+                  {
+                    "web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.571
+                    }
+                  }
+                ]
+              },
+              "constructor": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Constructors"
+                  }
+                },
+                "State": "Generated"
+              },
+              "constructor.car_url": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Constructors",
+                    "ConceptualProperty": "car_url"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "car url": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "car_url": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "url": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "car website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "car site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "car web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.589
+                    }
+                  },
+                  {
+                    "web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.571
+                    }
+                  }
+                ]
+              },
+              "constructor.constructor_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Constructors",
+                    "ConceptualProperty": "constructorId"
+                  }
+                },
+                "NameType": "Identifier",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "constructor id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "constructorId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "constructor identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "constructor identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "constructor identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "constructor credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "constructor.name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Constructors",
+                    "ConceptualProperty": "name"
+                  }
+                },
+                "NameType": "Name",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "constructor.nationality": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Constructors",
+                    "ConceptualProperty": "nationality"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nationality": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "person": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "population": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ]
+              },
+              "driver": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Drivers"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "driver": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "motorist": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "chauffeur": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "teamster": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "carter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "charioteer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "handler": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "trainer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  }
+                ]
+              },
+              "driver.driver_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Drivers",
+                    "ConceptualProperty": "driverId"
+                  }
+                },
+                "NameType": "Identifier",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "driver id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "driverId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "driver identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "driver identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "driver identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "driver credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "driver.full_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Drivers",
+                    "ConceptualProperty": "full name"
+                  }
+                },
+                "NameType": "Name",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "full name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "name": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "full nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "full title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "full label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "full tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "full surname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "complete name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "entire name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "whole name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "full given name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  }
+                ]
+              },
+              "driver.nationality": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Drivers",
+                    "ConceptualProperty": "nationality"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nationality": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "person": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "population": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ]
+              },
+              "driver.picture_url": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Drivers",
+                    "ConceptualProperty": "picture_url"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "picture url": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "picture_url": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "url": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "picture website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "website": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "picture site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "picture web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.589
+                    }
+                  },
+                  {
+                    "web address": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.571
+                    }
+                  }
+                ]
+              },
+              "medida": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "medida": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.corridas": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Corridas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "corridas": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.equipes": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Equipes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "equipes": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.pilotos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Pilotos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pilotos": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medida.temporadas": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Temporadas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "temporadas": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "race": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "race": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "competition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "rivalry": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "pursuit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "contest": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "battle": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "duel": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "fight": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "sprint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "meeting": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "marathon": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "race.circuit_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "ConceptualProperty": "circuitId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "circuit id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "circuitId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "circuit identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "circuit identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "circuit identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "circuit credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "race.date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "ConceptualProperty": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "race.date.variation.hierarquia_de_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "Hierarchy": "Hierarquia de datas",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hierarquia de data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hierarquia de information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de record": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "race.date.variation.hierarquia_de_data.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Ano",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "race.date.variation.hierarquia_de_data.dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Dia",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "race.date.variation.hierarquia_de_data.mê": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Mês",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "race.date.variation.hierarquia_de_data.trimestre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Trimestre",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "race.name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "ConceptualProperty": "name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "race.race_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "ConceptualProperty": "raceId"
+                  }
+                },
+                "NameType": "Identifier",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "race id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "raceId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "race identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "race identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "race identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "race credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "race.round": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "ConceptualProperty": "round"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "round": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "overweight": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "plump": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "fat": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "stout": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "smooth-edged": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "race.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Races",
+                    "ConceptualProperty": "year"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "result": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "result": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "consequence": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "outcome": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "upshot": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "product": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "effect": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "end": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "mark": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "grade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "score": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "result.constructor_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "constructorId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "constructor id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "constructorId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "constructor identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "constructor identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "constructor identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "constructor credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "result.driver_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "driverId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "driver id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "driverId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "driver identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "driver identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "driver identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "driver credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "result.fastest_lap_speed": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "fastestLapSpeed"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "fastest lap speed": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "fastestLapSpeed": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "speed": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "lap speed": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "fastest lap rapidity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "fastest lap swiftness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "fastest lap speediness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "fastest lap quickness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "fastest lap promptness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "lap rapidity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "lap swiftness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "lap speediness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "lap quickness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "lap promptness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  }
+                ]
+              },
+              "result.lap": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "laps"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "lap": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tour": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "circle": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "stage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "leg": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "part": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "segment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "section": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "heat": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "phase": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "result.point": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "points"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "point": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "opinion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "idea": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "argument": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "topic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "theme": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "outlet": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "socket": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "plug": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "contact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "result.position": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "position"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "position": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "situation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "place": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "site": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "spot": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "station": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "opinion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "policy": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "stance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "perception": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "attitude": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  }
+                ]
+              },
+              "result.race_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "raceId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "race id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "raceId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "race identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "race identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "race identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "race credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "result.result_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Results",
+                    "ConceptualProperty": "resultId"
+                  }
+                },
+                "NameType": "Identifier",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "result id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "resultId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "result identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "result identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "result identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "result credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "circuit_has_circuit_id": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit.circuit_id"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_circuit_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "circuit_ids_are_names_IDs_of_circuits",
+                    "Name": {
+                      "Name": {
+                        "Role": "circuit.circuit_id"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.circuit_id": {
+                    "Target": {
+                      "Entity": "circuit.circuit_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_has_country": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit.country"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_countries",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.country": {
+                    "Target": {
+                      "Entity": "circuit.country"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_has_flag_url": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit.flag_url"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_flag_urls",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.flag_url": {
+                    "Target": {
+                      "Entity": "circuit.flag_url"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_has_location": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit.location"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_locations",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.location": {
+                    "Target": {
+                      "Entity": "circuit.location"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_has_name": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit.name"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "names_are_names_IDs_of_circuits",
+                    "Name": {
+                      "Name": {
+                        "Role": "circuit.name"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.name": {
+                    "Target": {
+                      "Entity": "circuit.name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_has_picture_url": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit.picture_url"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_picture_urls",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.picture_url": {
+                    "Target": {
+                      "Entity": "circuit.picture_url"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_in_country": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "circuits_are_in_countries",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "circuit.country"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.country": {
+                    "Target": {
+                      "Entity": "circuit.country"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "circuit.country"
+                  }
+                },
+                "State": "Generated"
+              },
+              "circuit_in_location": {
+                "Binding": {
+                  "ConceptualEntity": "Circuits"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "circuits_are_in_locations",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "circuit.location"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "circuit.location": {
+                    "Target": {
+                      "Entity": "circuit.location"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "circuit.location"
+                  }
+                },
+                "State": "Generated"
+              },
+              "constructor_has_car_url": {
+                "Binding": {
+                  "ConceptualEntity": "Constructors"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "constructor.car_url"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "ID": "constructors_have_car_urls",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "constructor": {
+                    "Target": {
+                      "Entity": "constructor"
+                    }
+                  },
+                  "constructor.car_url": {
+                    "Target": {
+                      "Entity": "constructor.car_url"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "constructor_has_constructor_id": {
+                "Binding": {
+                  "ConceptualEntity": "Constructors"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "constructor.constructor_id"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "ID": "constructors_have_constructor_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "constructor_ids_are_names_IDs_of_constructors",
+                    "Name": {
+                      "Name": {
+                        "Role": "constructor.constructor_id"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "constructor": {
+                    "Target": {
+                      "Entity": "constructor"
+                    }
+                  },
+                  "constructor.constructor_id": {
+                    "Target": {
+                      "Entity": "constructor.constructor_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "constructor_has_name": {
+                "Binding": {
+                  "ConceptualEntity": "Constructors"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "constructor.name"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "ID": "constructors_have_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "names_are_names_IDs_of_constructors",
+                    "Name": {
+                      "Name": {
+                        "Role": "constructor.name"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "constructor": {
+                    "Target": {
+                      "Entity": "constructor"
+                    }
+                  },
+                  "constructor.name": {
+                    "Target": {
+                      "Entity": "constructor.name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "constructor_has_nationality": {
+                "Binding": {
+                  "ConceptualEntity": "Constructors"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "constructor.nationality"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "ID": "constructors_have_nationalities",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "constructor": {
+                    "Target": {
+                      "Entity": "constructor"
+                    }
+                  },
+                  "constructor.nationality": {
+                    "Target": {
+                      "Entity": "constructor.nationality"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "driver_drive_result": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "drivers_drive_results",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "result"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      },
+                      "Verbs": [
+                        {
+                          "drive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.75
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "driver"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_drivers",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "ID": "drivers_have_results",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "driver": {
+                    "Target": {
+                      "Entity": "driver"
+                    }
+                  },
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "driver_has_driver_id": {
+                "Binding": {
+                  "ConceptualEntity": "Drivers"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "driver.driver_id"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "ID": "drivers_have_driver_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "driver_ids_are_names_IDs_of_drivers",
+                    "Name": {
+                      "Name": {
+                        "Role": "driver.driver_id"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "driver": {
+                    "Target": {
+                      "Entity": "driver"
+                    }
+                  },
+                  "driver.driver_id": {
+                    "Target": {
+                      "Entity": "driver.driver_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "driver_has_full_name": {
+                "Binding": {
+                  "ConceptualEntity": "Drivers"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "driver.full_name"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "ID": "drivers_have_full_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "full_names_are_names_IDs_of_drivers",
+                    "Name": {
+                      "Name": {
+                        "Role": "driver.full_name"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "driver": {
+                    "Target": {
+                      "Entity": "driver"
+                    }
+                  },
+                  "driver.full_name": {
+                    "Target": {
+                      "Entity": "driver.full_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "driver_has_nationality": {
+                "Binding": {
+                  "ConceptualEntity": "Drivers"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "driver.nationality"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "ID": "drivers_have_nationalities",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "driver": {
+                    "Target": {
+                      "Entity": "driver"
+                    }
+                  },
+                  "driver.nationality": {
+                    "Target": {
+                      "Entity": "driver.nationality"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "driver_has_picture_url": {
+                "Binding": {
+                  "ConceptualEntity": "Drivers"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "driver.picture_url"
+                      },
+                      "Subject": {
+                        "Role": "driver"
+                      }
+                    },
+                    "ID": "drivers_have_picture_urls",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "driver": {
+                    "Target": {
+                      "Entity": "driver"
+                    }
+                  },
+                  "driver.picture_url": {
+                    "Target": {
+                      "Entity": "driver.picture_url"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_has_variation_hierarquia_de_data": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data"
+                      },
+                      "Subject": {
+                        "Role": "race.date"
+                      }
+                    },
+                    "ID": "dates_have_hierarquia_de_data",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date": {
+                    "Target": {
+                      "Entity": "race.date"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_ano_has_race_date_variation_hierarquia_de_data_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.ano"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.ano"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_has_ano": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.ano"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_has_dia": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_has_mê": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_has_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_mê_has_race_date_variation_hierarquia_de_data_dia": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_date_variation_hierarquia_de_data_trimestre_has_race_date_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "race.date.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "race.date.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race.date.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.mê"
+                    }
+                  },
+                  "race.date.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "race.date.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_circuit": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "circuit"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_circuits",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race"
+                      },
+                      "Subject": {
+                        "Role": "circuit"
+                      }
+                    },
+                    "ID": "circuits_have_races",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "circuit": {
+                    "Target": {
+                      "Entity": "circuit"
+                    }
+                  },
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.date"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  },
+                  "race.date": {
+                    "Target": {
+                      "Entity": "race.date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_medida_corridas": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.corridas"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_corridas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida.corridas": {
+                    "Target": {
+                      "Entity": "medida.corridas"
+                    }
+                  },
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_medida_temporadas": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.temporadas"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_temporadas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida.temporadas": {
+                    "Target": {
+                      "Entity": "medida.temporadas"
+                    }
+                  },
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_name": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.name"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  },
+                  "race.name": {
+                    "Target": {
+                      "Entity": "race.name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_race_id": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.race_id"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_race_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "race_ids_are_names_IDs_of_races",
+                    "Name": {
+                      "Name": {
+                        "Role": "race.race_id"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  },
+                  "race.race_id": {
+                    "Target": {
+                      "Entity": "race.race_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_round": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.round"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_round",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  },
+                  "race.round": {
+                    "Target": {
+                      "Entity": "race.round"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "race_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "Races"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race.year"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  },
+                  "race.year": {
+                    "Target": {
+                      "Entity": "race.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_constructor": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "constructor"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_constructors",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      }
+                    },
+                    "ID": "constructors_have_results",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "constructors_construct_results",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "result"
+                      },
+                      "Subject": {
+                        "Role": "constructor"
+                      },
+                      "Verbs": [
+                        {
+                          "construct": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.75
+                  }
+                ],
+                "Roles": {
+                  "constructor": {
+                    "Target": {
+                      "Entity": "constructor"
+                    }
+                  },
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_fastest_lap_speed": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result.fastest_lap_speed"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_fastest_lap_speeds",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  },
+                  "result.fastest_lap_speed": {
+                    "Target": {
+                      "Entity": "result.fastest_lap_speed"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_lap": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result.lap"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_laps",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  },
+                  "result.lap": {
+                    "Target": {
+                      "Entity": "result.lap"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_medida_equipes": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.equipes"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_equipes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida.equipes": {
+                    "Target": {
+                      "Entity": "medida.equipes"
+                    }
+                  },
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_medida_pilotos": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.pilotos"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_pilotos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida.pilotos": {
+                    "Target": {
+                      "Entity": "medida.pilotos"
+                    }
+                  },
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_point": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result.point"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_points",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  },
+                  "result.point": {
+                    "Target": {
+                      "Entity": "result.point"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_position": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result.position"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_positions",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  },
+                  "result.position": {
+                    "Target": {
+                      "Entity": "result.position"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_race": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "race"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_races",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result"
+                      },
+                      "Subject": {
+                        "Role": "race"
+                      }
+                    },
+                    "ID": "races_have_results",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "race": {
+                    "Target": {
+                      "Entity": "race"
+                    }
+                  },
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "result_has_result_id": {
+                "Binding": {
+                  "ConceptualEntity": "Results"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "result.result_id"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "ID": "results_have_result_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "result_ids_are_names_IDs_of_results",
+                    "Name": {
+                      "Name": {
+                        "Role": "result.result_id"
+                      },
+                      "Subject": {
+                        "Role": "result"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "result": {
+                    "Target": {
+                      "Entity": "result"
+                    }
+                  },
+                  "result.result_id": {
+                    "Target": {
+                      "Entity": "result.result_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "b6811a72-610d-4358-8650-9b5becb73e31",
+        "fromColumn": "date",
+        "fromTable": "Races",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_f943829b-b75d-47ab-af00-3a4efa440b0d"
+      },
+      {
+        "name": "AutoDetected_1d945537-a1ab-4b6e-93f9-df15eee19f38",
+        "fromColumn": "circuitId",
+        "fromTable": "Races",
+        "toColumn": "circuitId",
+        "toTable": "Circuits"
+      },
+      {
+        "name": "AutoDetected_c36fb5c5-295b-4e6c-8fa2-97e097384436",
+        "fromColumn": "constructorId",
+        "fromTable": "Results",
+        "toColumn": "constructorId",
+        "toTable": "Constructors"
+      },
+      {
+        "name": "AutoDetected_1f256f88-22f4-4fa5-adf4-e34c697b75ae",
+        "fromColumn": "driverId",
+        "fromTable": "Results",
+        "toColumn": "driverId",
+        "toTable": "Drivers"
+      },
+      {
+        "name": "AutoDetected_1abeac44-8358-4f5b-9761-0cae444ee0c3",
+        "fromColumn": "raceId",
+        "fromTable": "Results",
+        "toColumn": "raceId",
+        "toTable": "Races"
+      }
+    ],
+    "sourceQueryCulture": "es-ES",
+    "tables": [
+      {
+        "name": "Circuits",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "circuitId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "50fe9f78-c5ba-4b4a-9803-bb6c2546e74a",
+            "sourceColumn": "circuitId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "329edcf1-9c15-4d2a-b99e-7958a9522df8",
+            "sourceColumn": "name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dd1a5a3a-e21c-4d87-871c-de3722fcf41d",
+            "sourceColumn": "location",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e2690f6-8960-44ae-b5bb-4e53d80281ca",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "flag_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87c84690-bc22-46c4-b12e-648350a49aad",
+            "sourceColumn": "flag_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "picture_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "2b81145f-4a74-49e4-b96e-90f4c637e77e",
+            "sourceColumn": "picture_url",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "506e677e-c1eb-4a08-ac5a-c0175f0fc4b5",
+        "partitions": [
+          {
+            "name": "Circuits",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio2 - Formula1\\BaseDados F1.xlsx\"), null, true),",
+                "    Circuits_Sheet = Fonte{[Item=\"Circuits\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Circuits_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"circuitId\", type text}, {\"name\", type text}, {\"location\", type text}, {\"country\", type text}, {\"flag_url\", type text}, {\"picture_url\", type text}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_abd475a9-0125-44eb-80f5-abc8d4ce86f3",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "45246981-75eb-46b0-8710-55c18e563821",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "33616631-ee8f-4dd9-acb0-f31ae7656c20",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a8165d8e-02d6-4eba-a58b-ca2a01c8973b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "008a8961-7e90-4217-8133-430379f8a8a3",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9d77b796-7fb1-4402-af26-f3213873ad0f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "38801a6a-58da-474c-a777-a77e66b62f4d",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9e01b5dd-73e2-4139-a74a-bdb59f9ec5b6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "abb4e78e-56a1-4d6a-993b-0e31c257467c",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "d3ba6064-75ef-42b9-b0a8-7cd4e1f61031",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "a0028418-5273-4d79-b39f-5d392e50b23f",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "470838f0-a322-46fb-ab70-71329be559e6",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "82bc01bb-2b2d-4a6a-b61d-550b38300759"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "c6fa9b6f-8a25-49ef-af7c-c3dcf1309cb6",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_abd475a9-0125-44eb-80f5-abc8d4ce86f3",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Constructors",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "constructorId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cf3c690d-9b22-4f80-8327-ddafee483bf5",
+            "sourceColumn": "constructorId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "773bf16a-36c0-4dcb-9cda-51409e3ec80a",
+            "sourceColumn": "name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nationality",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4c0dffdf-b1e3-4f0b-9c3c-90b4a84c4991",
+            "sourceColumn": "nationality",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "car_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "86e76031-ca44-4000-b706-836e2d023de0",
+            "sourceColumn": "car_url",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "34806c35-eed6-431b-9dc2-563e81f17a6f",
+        "partitions": [
+          {
+            "name": "Constructors",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio2 - Formula1\\BaseDados F1.xlsx\"), null, true),",
+                "    Constructors_Sheet = Fonte{[Item=\"Constructors\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Constructors_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"constructorId\", type text}, {\"name\", type text}, {\"nationality\", type text}, {\"car_url\", type text}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Drivers",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "driverId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5076bc5b-f636-4391-9326-0cfd6dbe3264",
+            "sourceColumn": "driverId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nationality",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "855511a1-935d-4a6e-a6fc-679c71873733",
+            "sourceColumn": "nationality",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "picture_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ee9c3c30-d278-4817-b8bb-43b94c1034c4",
+            "sourceColumn": "picture_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "full name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fdf8f845-48a2-4fe8-a834-2e3cb7e64f47",
+            "sourceColumn": "full name",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "12ef4e2d-7352-4a86-ad64-6094eb8b63dc",
+        "partitions": [
+          {
+            "name": "Drivers",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio2 - Formula1\\BaseDados F1.xlsx\"), null, true),",
+                "    Drivers_Sheet = Fonte{[Item=\"Drivers\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Drivers_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"driverId\", type text}, {\"forename\", type text}, {\"surname\", type text}, {\"nationality\", type text}, {\"picture_url\", type text}}),",
+                "    #\"Colunas Mescladas\" = Table.CombineColumns(#\"Tipo Alterado\",{\"forename\", \"surname\"},Combiner.CombineTextByDelimiter(\" \", QuoteStyle.None),\"full name\")",
+                "in",
+                "    #\"Colunas Mescladas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Races",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "raceId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3a95471a-56f6-4cbb-99aa-b324c65dd4f2",
+            "sourceColumn": "raceId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "042b672e-70b9-435f-bfc6-11ec8d3ca227",
+            "sourceColumn": "year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "round",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "13628655-01c0-4376-89cc-e7afd8c2af7b",
+            "sourceColumn": "round",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "circuitId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "08c20fdd-c5c3-45be-9a74-a178f1b09cd8",
+            "sourceColumn": "circuitId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ba2339d7-f9ec-4d9d-89b4-b4610467fcb2",
+            "sourceColumn": "name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "16ba9348-9880-4ac6-9a82-eb7b17d0b56f",
+            "sourceColumn": "date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_f943829b-b75d-47ab-af00-3a4efa440b0d"
+                },
+                "isDefault": true,
+                "relationship": "b6811a72-610d-4358-8650-9b5becb73e31"
+              }
+            ]
+          }
+        ],
+        "lineageTag": "35a779e9-870c-43f3-849f-860895018826",
+        "partitions": [
+          {
+            "name": "Races",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio2 - Formula1\\BaseDados F1.xlsx\"), null, true),",
+                "    Races_Sheet = Fonte{[Item=\"Races\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Races_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"raceId\", type text}, {\"year\", Int64.Type}, {\"round\", Int64.Type}, {\"circuitId\", type text}, {\"name\", type text}, {\"date\", type date}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_f943829b-b75d-47ab-af00-3a4efa440b0d",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "63fdedca-24e8-4db7-bae8-471edd75daf4",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "c36c22db-d9b9-441e-970d-a7881bae570c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "906d88db-c996-424f-82fa-edf9c575e7a3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "6bf17626-2efd-4df6-8505-411d3fb4200c",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "332ecab7-f359-4b58-a73c-7316aea63eb6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "5f3961b1-d63d-47d6-9a51-cc06ac83b232",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "edc3c431-30c6-41d1-8a72-73acc0f80642",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "417a58be-612e-46b8-b0cb-654e01eab38e",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "d9ac317e-0e46-40e1-bdc9-3e1c35b3a84a",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "dbd46d6c-8bdc-46fa-9c7d-0d3a8193018e",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "7b9beab8-0714-408b-bc0f-69eccabdce2a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "42e2c081-b510-4e73-9c10-513a8af4baf1"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "7ea61ad7-ffa8-4b5f-a8d2-efcf80c6a4f8",
+        "partitions": [
+          {
+            "name": "LocalDateTable_f943829b-b75d-47ab-af00-3a4efa440b0d",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Races'[date])), 1, 1), Date(Year(MAX('Races'[date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Results",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "resultId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9d32dfe9-f8d9-4955-9977-dca3aea9c196",
+            "sourceColumn": "resultId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "raceId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85f93d25-b027-444f-8338-f839358eef2b",
+            "sourceColumn": "raceId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "driverId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "77d86a4c-e02e-4dac-a1fb-51f72b3521f0",
+            "sourceColumn": "driverId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "constructorId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "04dbe289-3ebd-4417-bddf-10476a5e4065",
+            "sourceColumn": "constructorId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "laps",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "73cfad60-3b03-4fe2-bb35-ddf1f68be3e6",
+            "sourceColumn": "laps",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "position",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "665097d2-afaf-4d8b-9423-e8146356ec1f",
+            "sourceColumn": "position",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "points",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "db30440d-4c8b-4a7a-9627-1e2f433764f8",
+            "sourceColumn": "points",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fastestLapSpeed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6d04ab55-e073-4a5a-b67a-ab43c3730f97",
+            "sourceColumn": "fastestLapSpeed",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "9934e91d-1c96-4c31-adbc-ff6c7eb1d256",
+        "partitions": [
+          {
+            "name": "Results",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio2 - Formula1\\BaseDados F1.xlsx\"), null, true),",
+                "    Results_Sheet = Fonte{[Item=\"Results\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Results_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"resultId\", type text}, {\"raceId\", type text}, {\"driverId\", type text}, {\"constructorId\", type text}, {\"position\", Int64.Type}, {\"positionText\", type text}, {\"points\", Int64.Type}, {\"laps\", Int64.Type}, {\"fastestLapSpeed\", type number}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"positionText\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "lineageTag": "8c49766c-18ab-433c-9134-8cbe6b43886d",
+        "measures": [
+          {
+            "name": "Corridas",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "DISTINCTCOUNT(Races[raceId]) ",
+            "formatString": "0",
+            "lineageTag": "068a5014-1dc9-4103-b260-85ebb5d81998"
+          },
+          {
+            "name": "Equipes",
+            "expression": "DISTINCTCOUNT(Results[constructorId])",
+            "formatString": "0",
+            "lineageTag": "fe61a97b-d12d-4e6c-a8e3-2db170f8282d"
+          },
+          {
+            "name": "Pilotos",
+            "expression": "DISTINCTCOUNT(Results[driverId])",
+            "formatString": "0",
+            "lineageTag": "c27fd10c-f40c-47c4-86f2-c9482f0311d6"
+          },
+          {
+            "name": "Temporadas",
+            "expression": "DISTINCTCOUNT(Races[year])",
+            "formatString": "0",
+            "lineageTag": "a410d190-7b1e-4bf1-8482-4330bef64f2a"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Coluna 1\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"Coluna 1\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

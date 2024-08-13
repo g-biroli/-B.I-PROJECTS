@@ -1,0 +1,172 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2},\"customTheme\":{\"name\":\"Formula_14009346470835653.json\",\"version\":\"5.56\",\"type\":1}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "simpleImageEBC4593F96F1425FB3D84C5BF02B5075"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Formula_14009346470835653.json",
+            "path": "Formula_14009346470835653.json",
+            "type": 201
+          },
+          {
+            "name": "TT._Corridas11985741298907393.svg",
+            "path": "TT._Corridas11985741298907393.svg",
+            "type": 100
+          },
+          {
+            "name": "pg15327750830668083.svg",
+            "path": "pg15327750830668083.svg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'TT. Corridas.svg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"TT._Corridas11985741298907393.svg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"type\":1}",
+      "displayName": "Tooltip Corridas",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 300.00,
+      "name": "00f84827640adee23a1b",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"89cf04b878283efcc0bf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.822685433072209,\"y\":56.32333511811991,\"z\":1000,\"width\":263.88525527563587,\"height\":238.85266188980478,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"simpleImageEBC4593F96F1425FB3D84C5BF02B5075\",\"projections\":{\"imageURL\":[{\"queryRef\":\"Circuits.picture_url\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Circuits\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"picture_url\"},\"Name\":\"Circuits.picture_url\",\"NativeReferenceName\":\"picture_url\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"imageSettings\":[{\"properties\":{\"imageAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'mcenter'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 238.85,
+          "width": 263.89,
+          "x": 7.82,
+          "y": 56.32,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c10bfd32df1f1718dd5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":560.1042770079702,\"height\":50.58669913386695,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(Circuits.name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Circuits\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"name\"}},\"Function\":3},\"Name\":\"Min(Circuits.name)\",\"NativeReferenceName\":\"name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.59,
+          "width": 560.10,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 560.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'pg1.svg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"pg15327750830668083.svg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Dashboard F1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "075db2dba45c086dd29a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"02a14a1e161e2f43a844\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.5,\"y\":407.5,\"z\":2000,\"width\":228.75,\"height\":98.75,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Pilotos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Pilotos\"},\"Name\":\"Medidas.Pilotos\",\"NativeReferenceName\":\"Pilotos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Pilotos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.75,
+          "width": 228.75,
+          "x": 47.50,
+          "y": 407.50,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"185b55dd6647cdba245b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865,\"y\":0,\"z\":5000,\"width\":378.75,\"height\":71.25,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Races.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Races\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"year\"},\"Name\":\"Races.year\",\"NativeReferenceName\":\"year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"2000D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Races\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"year\"}},\"Right\":{\"Literal\":{\"Value\":\"2000D\"}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 71.25,
+          "width": 378.75,
+          "x": 865.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"71550a1e325b17320396\",\"layouts\":[{\"id\":0,\"position\":{\"x\":307.5,\"y\":445,\"z\":8000,\"width\":502.5,\"height\":223.75,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Circuits.name\"},{\"queryRef\":\"Circuits.location\"},{\"queryRef\":\"Circuits.country\"},{\"queryRef\":\"Medidas.Corridas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Circuits\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"name\"},\"Name\":\"Circuits.name\",\"NativeReferenceName\":\"Circuito\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"location\"},\"Name\":\"Circuits.location\",\"NativeReferenceName\":\"Localização\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"country\"},\"Name\":\"Circuits.country\",\"NativeReferenceName\":\"País\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"},\"Name\":\"Medidas.Corridas\",\"NativeReferenceName\":\"Corridas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"}}}]},\"columnProperties\":{\"Circuits.name\":{\"displayName\":\"Circuito\"},\"Circuits.location\":{\"displayName\":\"Localização\"},\"Circuits.country\":{\"displayName\":\"País\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"71.25D\"}}}},\"selector\":{\"metadata\":\"Medidas.Corridas\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"85.48296978989511D\"}}}},\"selector\":{\"metadata\":\"Circuits.country\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"219.47956271437363D\"}}}},\"selector\":{\"metadata\":\"Circuits.name\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'00f84827640adee23a1b'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 223.75,
+          "width": 502.50,
+          "x": 307.50,
+          "y": 445.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"73139988f3e8bc6f2ce3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":838.75,\"y\":445,\"z\":7000,\"width\":390,\"height\":223.75,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Medidas.Corridas\"}],\"Category\":[{\"queryRef\":\"Circuits.country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Circuits\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"},\"Name\":\"Medidas.Corridas\",\"NativeReferenceName\":\"Corridas\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"country\"},\"Name\":\"Circuits.country\",\"NativeReferenceName\":\"country\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'canvasDark'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 223.75,
+          "width": 390.00,
+          "x": 838.75,
+          "y": 445.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"8e2df4f65e0b14f752b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.5,\"y\":121.25,\"z\":0,\"width\":228.75,\"height\":92.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Corridas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"},\"Name\":\"Medidas.Corridas\",\"NativeReferenceName\":\"Corridas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.50,
+          "width": 228.75,
+          "x": 47.50,
+          "y": 121.25,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"955bdd12afda49221a9e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":925,\"y\":158.75,\"z\":6000,\"width\":305,\"height\":225,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Circuits.country\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.Corridas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Circuits\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"country\"},\"Name\":\"Circuits.country\",\"NativeReferenceName\":\"country\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"},\"Name\":\"Medidas.Corridas\",\"NativeReferenceName\":\"Corridas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 225.00,
+          "width": 305.00,
+          "x": 925.00,
+          "y": 158.75,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9610b083f51ca1ae1bc9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":306.25,\"y\":158.75,\"z\":4000,\"width\":595,\"height\":225,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Races.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Medidas.Corridas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Races\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"year\"},\"Name\":\"Races.year\",\"NativeReferenceName\":\"Soma de year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"},\"Name\":\"Medidas.Corridas\",\"NativeReferenceName\":\"Corridas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Corridas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 225.00,
+          "width": 595.00,
+          "x": 306.25,
+          "y": 158.75,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"9cf2aa9895b444950e5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.5,\"y\":553.75,\"z\":3000,\"width\":228.75,\"height\":98.75,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Equipes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Equipes\"},\"Name\":\"Medidas.Equipes\",\"NativeReferenceName\":\"Equipes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Equipes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.75,
+          "width": 228.75,
+          "x": 47.50,
+          "y": 553.75,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"fb3c082c41d9e6507960\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.5,\"y\":257.5,\"z\":1000,\"width\":228.75,\"height\":102.5,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Temporadas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Temporadas\"},\"Name\":\"Medidas.Temporadas\",\"NativeReferenceName\":\"Temporadas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Temporadas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 102.50,
+          "width": 228.75,
+          "x": 47.50,
+          "y": 257.50,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Formula_14009346470835653.json"
+}

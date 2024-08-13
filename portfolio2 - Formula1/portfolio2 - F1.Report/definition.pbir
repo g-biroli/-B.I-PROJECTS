@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../portfolio2 - F1.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

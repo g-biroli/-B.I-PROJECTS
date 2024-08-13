@@ -1,0 +1,56 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Template__38161457023273408.png",
+            "path": "Template__38161457023273408.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Template #3.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Template__38161457023273408.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Portfolio 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filterfa2e73c9b5689b2da8e4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dCalendario\"}},\"Property\":\"Año\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+      "height": 720.00,
+      "name": "803f81949edd0b86408c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1aa8b964bd5b47203368\",\"layouts\":[{\"id\":0,\"position\":{\"x\":554.3757851890317,\"y\":521.442570227307,\"z\":0,\"width\":367.7542337392586,\"height\":155.06055377812024,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dVendedor.Gerente\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(fVendas.ValorTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dVendedor\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fVendas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gerente\"},\"Name\":\"dVendedor.Gerente\",\"NativeReferenceName\":\"Gerente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ValorTotal\"}},\"Function\":0},\"Name\":\"Sum(fVendas.ValorTotal)\",\"NativeReferenceName\":\"Soma de ValorTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ValorTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Vendas por Gerente'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 155.06,
+          "width": 367.75,
+          "x": 554.38,
+          "y": 521.44,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

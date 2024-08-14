@@ -4601,10 +4601,6 @@
         "name": "Circuits",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
@@ -4924,10 +4920,6 @@
         "name": "Constructors",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
@@ -5009,10 +5001,6 @@
       {
         "name": "Drivers",
         "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
           {
             "name": "PBI_ResultType",
             "value": "Table"
@@ -5096,10 +5084,6 @@
       {
         "name": "Races",
         "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
           {
             "name": "PBI_ResultType",
             "value": "Table"
@@ -5433,10 +5417,6 @@
         "name": "Results",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
@@ -5618,6 +5598,12 @@
             "expression": "DISTINCTCOUNT(Races[year])",
             "formatString": "0",
             "lineageTag": "a410d190-7b1e-4bf1-8482-4330bef64f2a"
+          },
+          {
+            "name": "Vitórias",
+            "expression": "CALCULATE([Corridas], Results[position] = 1)",
+            "formatString": "0",
+            "lineageTag": "f4a5cb19-e77e-48f0-add9-8e1351fdeaef"
           }
         ],
         "partitions": [

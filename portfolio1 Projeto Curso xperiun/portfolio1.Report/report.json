@@ -41,13 +41,58 @@
       "name": "803f81949edd0b86408c",
       "visualContainers": [
         {
-          "config": "{\"name\":\"1aa8b964bd5b47203368\",\"layouts\":[{\"id\":0,\"position\":{\"x\":554.3757851890317,\"y\":521.442570227307,\"z\":0,\"width\":367.7542337392586,\"height\":155.06055377812024,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dVendedor.Gerente\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(fVendas.ValorTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dVendedor\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fVendas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Gerente\"},\"Name\":\"dVendedor.Gerente\",\"NativeReferenceName\":\"Gerente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ValorTotal\"}},\"Function\":0},\"Name\":\"Sum(fVendas.ValorTotal)\",\"NativeReferenceName\":\"Soma de ValorTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ValorTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Vendas por Gerente'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"07b41adf35d1d6e2ea56\",\"layouts\":[{\"id\":0,\"position\":{\"x\":639.453257173487,\"y\":87.82190656459908,\"z\":4,\"width\":474.7871823648638,\"height\":144.08281545754537,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Ticket Medio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ticket Medio\"},\"Name\":\"Medidas.Ticket Medio\",\"NativeReferenceName\":\"Ticket Medio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ticket Medio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]}}}",
           "filters": "[]",
-          "height": 155.06,
-          "width": 367.75,
-          "x": 554.38,
-          "y": 521.44,
-          "z": 0.00
+          "height": 144.08,
+          "width": 474.79,
+          "x": 639.45,
+          "y": 87.82,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"13f9510c29b73b58f6cb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":113.89403507596442,\"y\":87.82190656459908,\"z\":1,\"width\":474.7871823648638,\"height\":144.08281545754537,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Qtd Itens Vendidos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Itens Vendidos\"},\"Name\":\"Medidas.Qtd Itens Vendidos\",\"NativeReferenceName\":\"Qtd Itens Vendidos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Itens Vendidos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.08,
+          "width": 474.79,
+          "x": 113.89,
+          "y": 87.82,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"cce1cc096d97c35c5055\",\"layouts\":[{\"id\":0,\"position\":{\"x\":639.453257173487,\"y\":476.1593996549356,\"z\":6,\"width\":474.7871823648638,\"height\":187.9937687398449,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Faturamento\"},{\"queryRef\":\"Medidas.Qtd Vendas\"},{\"queryRef\":\"Medidas.Ticket Medio\"}],\"Rows\":[{\"queryRef\":\"dVendedor.Supervisor\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dVendedor\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento\"},\"Name\":\"Medidas.Faturamento\",\"NativeReferenceName\":\"Faturamento\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Vendas\"},\"Name\":\"Medidas.Qtd Vendas\",\"NativeReferenceName\":\"Qtd Vendas\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ticket Medio\"},\"Name\":\"Medidas.Ticket Medio\",\"NativeReferenceName\":\"Ticket Medio\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Supervisor\"},\"Name\":\"dVendedor.Supervisor\",\"NativeReferenceName\":\"Supervisor\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Compact'\"}}}}}],\"values\":[{\"properties\":{\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnTotal\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"rowTotal\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Condensed'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.99,
+          "width": 474.79,
+          "x": 639.45,
+          "y": 476.16,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"eb8bfc6eb72d2b20006e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":639,\"y\":284,\"width\":475,\"height\":150,\"z\":5,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Faturamento\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento\"},\"Name\":\"Medidas.Faturamento\",\"NativeReferenceName\":\"Faturamento\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 475.00,
+          "x": 639.00,
+          "y": 284.00,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"efc1e09bb458ac2a973a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":113.89403507596442,\"y\":476.1593996549356,\"z\":3,\"width\":474.7871823648638,\"height\":149.5716846178328,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Qtd Nfe\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Nfe\"},\"Name\":\"Medidas.Qtd Nfe\",\"NativeReferenceName\":\"Qtd Nfe\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Nfe\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 149.57,
+          "width": 474.79,
+          "x": 113.89,
+          "y": 476.16,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"f8b5a8c85e75a8b6f45f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":113.89403507596442,\"y\":284.0489790448751,\"z\":2,\"width\":474.7871823648638,\"height\":149.5716846178328,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Qtd Venda\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Vendas\"},\"Name\":\"Medidas.Qtd Venda\",\"NativeReferenceName\":\"Qtd Vendas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Qtd Vendas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 149.57,
+          "width": 474.79,
+          "x": 113.89,
+          "y": 284.05,
+          "z": 2.00
         }
       ],
       "width": 1280.00

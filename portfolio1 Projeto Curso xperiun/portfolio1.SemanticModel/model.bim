@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"fMetas\",\"fVendas\",\"Consulta2\",\"dCalendario\",\"dVendedor\",\"dProduto\"]"
+        "value": "[\"fMetas\",\"fVendas\",\"Consulta2\",\"dCalendario\",\"dVendedor\",\"dProduto\",\"Medidas\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -1109,6 +1109,77 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "5c087b15-86bc-4293-929f-4bec9b1533ed",
+        "measures": [
+          {
+            "name": "Qtd Itens Vendidos",
+            "expression": "SUM(fVendas[QtdItens])",
+            "formatString": "0",
+            "lineageTag": "be02776c-abd0-4d55-af7e-f6e6f4663f38"
+          },
+          {
+            "name": "Qtd Vendas",
+            "expression": "COUNTROWS(fVendas)",
+            "formatString": "#,0",
+            "lineageTag": "895cda29-4fcb-461b-ab9b-df738278f641"
+          },
+          {
+            "name": "Qtd Nfe",
+            "expression": "DISTINCTCOUNT(fVendas[NFe])",
+            "formatString": "0",
+            "lineageTag": "652cd179-ef20-4deb-995b-3e5214346cad"
+          },
+          {
+            "name": "Ticket Medio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": "[Faturamento] / [Qtd Nfe] ",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "409b22e3-5445-42bc-a9fc-bf43e055ca20"
+          },
+          {
+            "name": "Faturamento",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "SUM(fVendas[ValorTotal])",
+            "formatString": "\"R$\"\\ #,0;-\"R$\"\\ #,0;\"R$\"\\ #,0",
+            "lineageTag": "d5cfab60-22c3-4e9c-8127-28e90f98d105"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Coluna 1\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"Coluna 1\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }

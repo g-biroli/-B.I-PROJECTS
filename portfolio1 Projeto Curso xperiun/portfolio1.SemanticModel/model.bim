@@ -1161,6 +1161,42 @@
             "expression": "SUM(fVendas[ValorTotal])",
             "formatString": "\"R$\"\\ #,0;-\"R$\"\\ #,0;\"R$\"\\ #,0",
             "lineageTag": "d5cfab60-22c3-4e9c-8127-28e90f98d105"
+          },
+          {
+            "name": "Faturamento 2018",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": "CALCULATE([Faturamento], dCalendario[Año] = 2018)",
+            "formatString": "#,0\\ \"€\";-#,0\\ \"€\";#,0\\ \"€\"",
+            "lineageTag": "4ec9501c-bd16-41c6-9bcf-4dcd6a9cbbe2"
+          },
+          {
+            "name": "Faturamento Bebidas",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": "CALCULATE([Faturamento], dProduto[Linha Produto] = \"bebidas\")",
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "35906f60-73d6-4493-ad4f-9a7098ef7ea8"
+          },
+          {
+            "name": "Faturamento Alimentos",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": "CALCULATE([Faturamento], dProduto[Linha Produto] = \"Alimentos\")",
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "8d0bccdd-0e96-43f0-999a-89e95477257d"
           }
         ],
         "partitions": [

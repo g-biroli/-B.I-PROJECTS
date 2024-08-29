@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -102,6 +102,27 @@
           "x": 113.89,
           "y": 284.05,
           "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "efaf4d2f126d797e2dd6",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"be3ca538c779c60065ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":384.25660289223225,\"y\":143.49831643278384,\"z\":0,\"width\":559.6434340878569,\"height\":433.6838007746356,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dVendedor.Vendedor\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Faturamento\"},{\"queryRef\":\"Medidas.Faturamento 2018\"},{\"queryRef\":\"Medidas.Faturamento Vendedores > 1M\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dVendedor\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Vendedor\"},\"Name\":\"dVendedor.Vendedor\",\"NativeReferenceName\":\"Vendedor\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento\"},\"Name\":\"Medidas.Faturamento\",\"NativeReferenceName\":\"Faturamento\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"},\"Name\":\"Medidas.Faturamento 2018\",\"NativeReferenceName\":\"Faturamento 2018\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento Vendedores > 1M\"},\"Name\":\"Medidas.Faturamento Vendedores > 1M\",\"NativeReferenceName\":\"Faturamento Vendedores > 1M\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento Vendedores > 1M\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 433.68,
+          "width": 559.64,
+          "x": 384.26,
+          "y": 143.50,
+          "z": 0.00
         }
       ],
       "width": 1280.00

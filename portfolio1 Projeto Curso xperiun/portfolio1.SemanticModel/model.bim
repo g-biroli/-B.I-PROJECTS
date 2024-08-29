@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.1203.0 (24.07)"
+        "value": "2.132.1053.0 (24.08)"
       },
       {
         "name": "PBI_ProTooling",
@@ -218,7 +218,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "4cf8f77c-dec7-4bc8-8664-11acc340cde5",
@@ -241,7 +240,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "66d92b8e-8334-474e-ba5b-dab2f6fb450b",
             "summarizeBy": "none",
@@ -262,7 +260,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "bd77f2e1-82f8-4f5c-8f86-67666e08dbff",
             "summarizeBy": "none",
@@ -304,7 +301,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([NroMes] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "7f5cdbb8-c1ae-4319-a01a-8107388ba6f4",
             "summarizeBy": "none",
@@ -346,7 +342,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "131b3a9d-2866-4e1d-a696-c6af287c0369",
             "summarizeBy": "none",
@@ -923,7 +918,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "31691026-d6ed-44be-a05a-d5232083f8b0",
@@ -946,7 +940,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "541c9d5b-1a87-469b-acfb-60d31011c781",
             "summarizeBy": "none",
@@ -967,7 +960,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "2beb72f6-4437-48d5-aea9-fce93acf3121",
             "summarizeBy": "none",
@@ -1009,7 +1001,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([NroMes] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "a9ced55a-4de6-485e-a938-20bea82ab04a",
             "summarizeBy": "none",
@@ -1051,7 +1042,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "57846e2f-9249-4f94-b2bf-c010d0521439",
             "summarizeBy": "none",
@@ -1183,7 +1173,7 @@
               }
             ],
             "expression": "CALCULATE([Faturamento], dProduto[Linha Produto] = \"bebidas\")",
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
             "lineageTag": "35906f60-73d6-4493-ad4f-9a7098ef7ea8"
           },
           {
@@ -1195,8 +1185,82 @@
               }
             ],
             "expression": "CALCULATE([Faturamento], dProduto[Linha Produto] = \"Alimentos\")",
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
             "lineageTag": "8d0bccdd-0e96-43f0-999a-89e95477257d"
+          },
+          {
+            "name": "Qtd All Vendas",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Qtd Vendas],",
+              "    ALL(fVendas)",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "0f7058a4-3627-4599-b852-bb2d7c94513a"
+          },
+          {
+            "name": "% Vendas p Vendedor",
+            "expression": "DIVIDE([Qtd Vendas], [Qtd All Vendas])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "3e7725bd-769d-4e63-95cd-9e31d18fbc4c"
+          },
+          {
+            "name": "Faturamento ALLSELECTED Vendas",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Faturamento],",
+              "    ALLSELECTED(fVendas)",
+              ")   "
+            ],
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "0478ac54-cfd9-4709-90e4-a4ee4a3d4d01"
+          },
+          {
+            "name": "Faturamento ALL Vendas",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Faturamento],",
+              "    ALL(fVendas)",
+              ")"
+            ],
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "3bc509cb-d858-401f-8eb6-2fd5e9f6707f"
+          },
+          {
+            "name": "Faturamento Vendedores > 1M",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Faturamento],",
+              "    FILTER(",
+              "        dVendedor,",
+              "        [Faturamento] > 1000000",
+              "))"
+            ],
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "b934cd5d-e2c6-4dbe-951b-300853265159"
           }
         ],
         "partitions": [

@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
@@ -632,8 +632,14 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
             "dataType": "string",
             "lineageTag": "e1bf70a6-8582-48fb-8195-7c58b76d6801",
+            "sortByColumn": "Mes",
             "sourceColumn": "Nombre del mes",
             "summarizeBy": "none"
           },
@@ -1261,6 +1267,78 @@
             ],
             "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
             "lineageTag": "b934cd5d-e2c6-4dbe-951b-300853265159"
+          },
+          {
+            "name": "Faturamento PM",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Faturamento],",
+              "    PREVIOUSMONTH(dCalendario[Data])",
+              ")"
+            ],
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "lineageTag": "70d27a9c-2689-47db-9166-4af3058f6f0e"
+          },
+          {
+            "name": "Faturamento MoM",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "[Faturamento] - [Faturamento PM]",
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "lineageTag": "4db6ac94-0293-43d4-beff-067713e5c59b"
+          },
+          {
+            "name": "Faturamento MoM %",
+            "expression": "DIVIDE([Faturamento MoM], [Faturamento PM])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "947f379a-17d7-49ee-b482-f00cdbbafbbc"
+          },
+          {
+            "name": "Faturamento PY",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Faturamento],",
+              "    SAMEPERIODLASTYEAR(dCalendario[Data])",
+              ")"
+            ],
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "bcd9e47e-f901-4df2-afbf-e41532f1bfb9"
+          },
+          {
+            "name": "Faturamento YoY",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-ES\"}"
+              }
+            ],
+            "expression": "[Faturamento] - [Faturamento PY]",
+            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "lineageTag": "14e952dd-3541-4992-ad77-2bb2da858d5e"
+          },
+          {
+            "name": "Faturamento YoY %",
+            "expression": "DIVIDE([Faturamento PY], [Faturamento])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "b587f4c8-b285-459d-bc99-75b0d3c0e16c"
           }
         ],
         "partitions": [

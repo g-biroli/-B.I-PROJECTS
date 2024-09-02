@@ -684,6 +684,20 @@
             "lineageTag": "9fbc8780-0218-4541-bc8f-e50005a666df",
             "sourceColumn": "Día",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Semana do Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cb1a63f9-4455-4418-ae5e-2e1e6376ce51",
+            "sourceColumn": "Semana do Ano",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "e0157b5e-1a2c-4e18-8666-cf9a5155ee88",
@@ -707,9 +721,10 @@
                 "    #\"Columnas quitadas1\" = Table.RemoveColumns(#\"Día de la semana insertado\",{\"Día de la semana\"}),",
                 "    #\"Día insertado\" = Table.AddColumn(#\"Columnas quitadas1\", \"Día\", each Date.Day([Column1]), Int64.Type),",
                 "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Día insertado\",{{\"Column1\", \"Data\"}}),",
-                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Columnas con nombre cambiado\",{{\"Data\", type date}})",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Columnas con nombre cambiado\",{{\"Data\", type date}}),",
+                "    #\"Semana do Ano Inserida\" = Table.AddColumn(#\"Tipo cambiado\", \"Semana do Ano\", each Date.WeekOfYear([Data]), Int64.Type)",
                 "in",
-                "    #\"Tipo cambiado\""
+                "    #\"Semana do Ano Inserida\""
               ],
               "type": "m"
             }
@@ -1339,6 +1354,30 @@
             "expression": "DIVIDE([Faturamento PY], [Faturamento])",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "b587f4c8-b285-459d-bc99-75b0d3c0e16c"
+          },
+          {
+            "name": "Faturamento YTD",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Faturamento],",
+              "    DATESYTD(dCalendario[Data])",
+              ")"
+            ],
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "lineageTag": "c9522839-082b-410d-b8ff-5bf5f76fc60f"
+          },
+          {
+            "name": "Positivação",
+            "expression": "DISTINCTCOUNT(fVendas[cdProduto])",
+            "formatString": "0",
+            "lineageTag": "5e4915cc-367f-46d3-97a9-cadaa9b45cd7"
           }
         ],
         "partitions": [

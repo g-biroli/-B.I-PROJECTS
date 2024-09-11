@@ -132,14 +132,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "dataType": "decimal",
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "5b55816f-990b-4dda-841a-9510b2727ae2",
             "sourceColumn": "ValorMetas",
             "summarizeBy": "sum"
@@ -171,7 +167,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\Curso Express - Xperiun\\Portfolio1\\Metas.xlsx\"), null, true),",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio1 Projeto Curso xperiun\\BaseDados\\Metas.xlsx\"), null, true),",
                 "    Metas_Sheet = Origen{[Item=\"Metas\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Metas_Sheet, [PromoteAllScalars=true]),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Metas por Vendedor\", type any}, {\"Column2\", type any}, {\"Column3\", type any}, {\"Column4\", type any}, {\"Column5\", type any}, {\"Column6\", type any}, {\"Column7\", type any}, {\"Column8\", type any}, {\"Column9\", type any}, {\"Column10\", type any}, {\"Column11\", type any}, {\"Column12\", type any}, {\"Column13\", type any}, {\"Column14\", type any}, {\"Column15\", type any}, {\"Column16\", type any}, {\"Column17\", type any}, {\"Column18\", type any}, {\"Column19\", type any}, {\"Column20\", type any}, {\"Column21\", type any}, {\"Column22\", type any}, {\"Column23\", type any}, {\"Column24\", type any}, {\"Column25\", type any}, {\"Column26\", type any}}),",
@@ -490,14 +486,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "dataType": "decimal",
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "ad1a8680-0527-4b1b-9838-3a4c01c6d5c8",
             "sourceColumn": "ValorUnitario",
             "summarizeBy": "sum"
@@ -508,14 +500,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "dataType": "decimal",
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "f7a3e49e-620c-440c-98b0-529ac55e9d2b",
             "sourceColumn": "ValorTotal",
             "summarizeBy": "sum"
@@ -548,17 +536,14 @@
             "source": {
               "expression": [
                 "let",
-                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\Curso Express - Xperiun\\Portfolio1\\Vendas.xlsx\"), null, true),",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio1 Projeto Curso xperiun\\BaseDados\\Vendas.xlsx\"), null, true),",
                 "    Planilha1_Sheet = Origen{[Item=\"Planilha1\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"DataEmissao\", type date}, {\"NFe\", Int64.Type}, {\"cdProduto\", Int64.Type}, {\"Produto\", type text}, {\"Grupo Produto\", type text}, {\"Linha Produto\", type text}, {\"cdVendedor\", Int64.Type}, {\"Vendedor\", type text}, {\"Supervisor\", type text}, {\"Gerente\", type text}, {\"Equipe Vendas\", type text}, {\"QtdItens\", Int64.Type}, {\"ValorUnitario\", Currency.Type}}),",
                 "    #\"Otras columnas quitadas\" = Table.SelectColumns(#\"Tipo cambiado\",{\"DataEmissao\", \"NFe\", \"cdProduto\", \"cdVendedor\", \"QtdItens\", \"ValorUnitario\"}),",
                 "    #\"Tipo cambiado1\" = Table.TransformColumnTypes(#\"Otras columnas quitadas\",{{\"cdVendedor\", type text}}),",
-                "    #\"Consultas combinadas\" = Table.NestedJoin(#\"Tipo cambiado1\", {\"cdVendedor\"}, dVendedor, {\"cdVendedor\"}, \"dVendedor\", JoinKind.LeftOuter),",
-                "    #\"Se expandió dVendedor\" = Table.ExpandTableColumn(#\"Consultas combinadas\", \"dVendedor\", {\"Vendedor\"}, {\"dVendedor.Vendedor\"}),",
-                "    #\"Tipo cambiado2\" = Table.TransformColumnTypes(#\"Se expandió dVendedor\",{{\"NFe\", type text}, {\"cdProduto\", type text}}),",
-                "    #\"Columnas quitadas\" = Table.RemoveColumns(#\"Tipo cambiado2\",{\"dVendedor.Vendedor\"}),",
-                "    #\"Personalizada agregada\" = Table.AddColumn(#\"Columnas quitadas\", \"ValorTotal\", each [QtdItens] * [ValorUnitario]),",
+                "    #\"Tipo cambiado2\" = Table.TransformColumnTypes(#\"Tipo cambiado1\",{{\"NFe\", type text}, {\"cdProduto\", type text}}),",
+                "    #\"Personalizada agregada\" = Table.AddColumn(#\"Tipo cambiado2\", \"ValorTotal\", each [QtdItens] * [ValorUnitario]),",
                 "    #\"Tipo cambiado3\" = Table.TransformColumnTypes(#\"Personalizada agregada\",{{\"ValorTotal\", Currency.Type}})",
                 "in",
                 "    #\"Tipo cambiado3\""
@@ -698,6 +683,25 @@
             "lineageTag": "cb1a63f9-4455-4418-ae5e-2e1e6376ce51",
             "sourceColumn": "Semana do Ano",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Mês Abreviação",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a2dcf64f-aa01-4923-b2e1-6f34393793f5",
+            "sortByColumn": "Mes",
+            "sourceColumn": "Mês Abreviação",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "e0157b5e-1a2c-4e18-8666-cf9a5155ee88",
@@ -722,9 +726,10 @@
                 "    #\"Día insertado\" = Table.AddColumn(#\"Columnas quitadas1\", \"Día\", each Date.Day([Column1]), Int64.Type),",
                 "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Día insertado\",{{\"Column1\", \"Data\"}}),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Columnas con nombre cambiado\",{{\"Data\", type date}}),",
-                "    #\"Semana do Ano Inserida\" = Table.AddColumn(#\"Tipo cambiado\", \"Semana do Ano\", each Date.WeekOfYear([Data]), Int64.Type)",
+                "    #\"Semana do Ano Inserida\" = Table.AddColumn(#\"Tipo cambiado\", \"Semana do Ano\", each Date.WeekOfYear([Data]), Int64.Type),",
+                "    #\"Primeiros Caracteres Inseridos\" = Table.AddColumn(#\"Semana do Ano Inserida\", \"Mês Abreviação\", each Text.Start([Nombre del mes], 3), type text)",
                 "in",
-                "    #\"Semana do Ano Inserida\""
+                "    #\"Primeiros Caracteres Inseridos\""
               ],
               "type": "m"
             }
@@ -737,6 +742,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -814,7 +823,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\Curso Express - Xperiun\\Portfolio1\\Vendas.xlsx\"), null, true),",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio1 Projeto Curso xperiun\\BaseDados\\Vendas.xlsx\"), null, true),",
                 "    Planilha1_Sheet = Origen{[Item=\"Planilha1\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"DataEmissao\", type date}, {\"NFe\", Int64.Type}, {\"cdProduto\", Int64.Type}, {\"Produto\", type text}, {\"Grupo Produto\", type text}, {\"Linha Produto\", type text}, {\"cdVendedor\", Int64.Type}, {\"Vendedor\", type text}, {\"Supervisor\", type text}, {\"Gerente\", type text}, {\"Equipe Vendas\", type text}, {\"QtdItens\", Int64.Type}, {\"ValorUnitario\", Currency.Type}}),",
@@ -903,7 +912,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\Curso Express - Xperiun\\Portfolio1\\Vendas.xlsx\"), null, true),",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\Gabriel\\OneDrive\\DEV\\Estudos B.I\\ESTUDOS B.I\\-B.I-PROJECTS\\portfolio1 Projeto Curso xperiun\\BaseDados\\Vendas.xlsx\"), null, true),",
                 "    Planilha1_Sheet = Origen{[Item=\"Planilha1\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"DataEmissao\", type date}, {\"NFe\", Int64.Type}, {\"cdProduto\", Int64.Type}, {\"Produto\", type text}, {\"Grupo Produto\", type text}, {\"Linha Produto\", type text}, {\"cdVendedor\", Int64.Type}, {\"Vendedor\", type text}, {\"Supervisor\", type text}, {\"Gerente\", type text}, {\"Equipe Vendas\", type text}, {\"QtdItens\", Int64.Type}, {\"ValorUnitario\", Currency.Type}}),",
@@ -1139,102 +1148,42 @@
           },
           {
             "name": "Qtd Vendas",
-            "expression": "COUNTROWS(fVendas)",
-            "formatString": "#,0",
-            "lineageTag": "895cda29-4fcb-461b-ab9b-df738278f641"
-          },
-          {
-            "name": "Qtd Nfe",
             "expression": "DISTINCTCOUNT(fVendas[NFe])",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "652cd179-ef20-4deb-995b-3e5214346cad"
           },
           {
             "name": "Ticket Medio",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
-            "expression": "[Faturamento] / [Qtd Nfe] ",
-            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "expression": "[Faturamento] / [Qtd Vendas] ",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "409b22e3-5445-42bc-a9fc-bf43e055ca20"
           },
           {
             "name": "Faturamento",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
-              }
-            ],
             "expression": "SUM(fVendas[ValorTotal])",
-            "formatString": "\"R$\"\\ #,0;-\"R$\"\\ #,0;\"R$\"\\ #,0",
+            "formatString": "\"€\"\\ #,0;-\"€\"\\ #,0;\"€\"\\ #,0",
             "lineageTag": "d5cfab60-22c3-4e9c-8127-28e90f98d105"
           },
           {
             "name": "Faturamento 2018",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": "CALCULATE([Faturamento], dCalendario[Año] = 2018)",
-            "formatString": "#,0\\ \"€\";-#,0\\ \"€\";#,0\\ \"€\"",
+            "formatString": "\"€\"\\ #,0;-\"€\"\\ #,0;\"€\"\\ #,0",
             "lineageTag": "4ec9501c-bd16-41c6-9bcf-4dcd6a9cbbe2"
           },
           {
             "name": "Faturamento Bebidas",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": "CALCULATE([Faturamento], dProduto[Linha Produto] = \"bebidas\")",
-            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "35906f60-73d6-4493-ad4f-9a7098ef7ea8"
           },
           {
             "name": "Faturamento Alimentos",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": "CALCULATE([Faturamento], dProduto[Linha Produto] = \"Alimentos\")",
-            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "8d0bccdd-0e96-43f0-999a-89e95477257d"
           },
           {
-            "name": "Qtd All Vendas",
-            "expression": [
-              "",
-              "CALCULATE(",
-              "    [Qtd Vendas],",
-              "    ALL(fVendas)",
-              ")"
-            ],
-            "formatString": "0",
-            "lineageTag": "0f7058a4-3627-4599-b852-bb2d7c94513a"
-          },
-          {
-            "name": "% Vendas p Vendedor",
-            "expression": "DIVIDE([Qtd Vendas], [Qtd All Vendas])",
-            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
-            "lineageTag": "3e7725bd-769d-4e63-95cd-9e31d18fbc4c"
-          },
-          {
             "name": "Faturamento ALLSELECTED Vendas",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": [
               "",
               "CALCULATE(",
@@ -1242,17 +1191,11 @@
               "    ALLSELECTED(fVendas)",
               ")   "
             ],
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "0478ac54-cfd9-4709-90e4-a4ee4a3d4d01"
           },
           {
             "name": "Faturamento ALL Vendas",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": [
               "",
               "CALCULATE(",
@@ -1260,17 +1203,11 @@
               "    ALL(fVendas)",
               ")"
             ],
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "3bc509cb-d858-401f-8eb6-2fd5e9f6707f"
           },
           {
             "name": "Faturamento Vendedores > 1M",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": [
               "",
               "CALCULATE(",
@@ -1280,17 +1217,11 @@
               "        [Faturamento] > 1000000",
               "))"
             ],
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "b934cd5d-e2c6-4dbe-951b-300853265159"
           },
           {
             "name": "Faturamento PM",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
-              }
-            ],
             "expression": [
               "",
               "CALCULATE(",
@@ -1298,19 +1229,13 @@
               "    PREVIOUSMONTH(dCalendario[Data])",
               ")"
             ],
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "70d27a9c-2689-47db-9166-4af3058f6f0e"
           },
           {
             "name": "Faturamento MoM",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
-              }
-            ],
             "expression": "[Faturamento] - [Faturamento PM]",
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "4db6ac94-0293-43d4-beff-067713e5c59b"
           },
           {
@@ -1321,12 +1246,6 @@
           },
           {
             "name": "Faturamento PY",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": [
               "",
               "CALCULATE(",
@@ -1334,19 +1253,13 @@
               "    SAMEPERIODLASTYEAR(dCalendario[Data])",
               ")"
             ],
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "bcd9e47e-f901-4df2-afbf-e41532f1bfb9"
           },
           {
             "name": "Faturamento YoY",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"es-ES\"}"
-              }
-            ],
             "expression": "[Faturamento] - [Faturamento PY]",
-            "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "14e952dd-3541-4992-ad77-2bb2da858d5e"
           },
           {
@@ -1357,12 +1270,6 @@
           },
           {
             "name": "Faturamento YTD",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
-              }
-            ],
             "expression": [
               "",
               "CALCULATE(",
@@ -1370,7 +1277,7 @@
               "    DATESYTD(dCalendario[Data])",
               ")"
             ],
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "c9522839-082b-410d-b8ff-5bf5f76fc60f"
           },
           {

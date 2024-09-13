@@ -132,10 +132,14 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "dataType": "decimal",
-            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "5b55816f-990b-4dda-841a-9510b2727ae2",
             "sourceColumn": "ValorMetas",
             "summarizeBy": "sum"
@@ -486,10 +490,14 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "dataType": "decimal",
-            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "ad1a8680-0527-4b1b-9838-3a4c01c6d5c8",
             "sourceColumn": "ValorUnitario",
             "summarizeBy": "sum"
@@ -500,10 +508,14 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "dataType": "decimal",
-            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "f7a3e49e-620c-440c-98b0-529ac55e9d2b",
             "sourceColumn": "ValorTotal",
             "summarizeBy": "sum"
@@ -596,7 +608,7 @@
             ]
           },
           {
-            "name": "Año",
+            "name": "Ano",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -606,11 +618,11 @@
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "64736d66-3f82-4fc3-8093-f1d5532ef7d6",
-            "sourceColumn": "Año",
+            "sourceColumn": "Ano",
             "summarizeBy": "sum"
           },
           {
-            "name": "Nombre del mes",
+            "name": "Nome do mês",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -625,7 +637,7 @@
             "dataType": "string",
             "lineageTag": "e1bf70a6-8582-48fb-8195-7c58b76d6801",
             "sortByColumn": "Mes",
-            "sourceColumn": "Nombre del mes",
+            "sourceColumn": "Nome do mês",
             "summarizeBy": "none"
           },
           {
@@ -727,9 +739,10 @@
                 "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Día insertado\",{{\"Column1\", \"Data\"}}),",
                 "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Columnas con nombre cambiado\",{{\"Data\", type date}}),",
                 "    #\"Semana do Ano Inserida\" = Table.AddColumn(#\"Tipo cambiado\", \"Semana do Ano\", each Date.WeekOfYear([Data]), Int64.Type),",
-                "    #\"Primeiros Caracteres Inseridos\" = Table.AddColumn(#\"Semana do Ano Inserida\", \"Mês Abreviação\", each Text.Start([Nombre del mes], 3), type text)",
+                "    #\"Primeiros Caracteres Inseridos\" = Table.AddColumn(#\"Semana do Ano Inserida\", \"Mês Abreviação\", each Text.Start([Nombre del mes], 3), type text),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Primeiros Caracteres Inseridos\",{{\"Año\", \"Ano\"}, {\"Nombre del mes\", \"Nome do mês\"}})",
                 "in",
-                "    #\"Primeiros Caracteres Inseridos\""
+                "    #\"Colunas Renomeadas\""
               ],
               "type": "m"
             }
@@ -1154,19 +1167,31 @@
           },
           {
             "name": "Ticket Medio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
             "expression": "[Faturamento] / [Qtd Vendas] ",
-            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "409b22e3-5445-42bc-a9fc-bf43e055ca20"
           },
           {
             "name": "Faturamento",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
             "expression": "SUM(fVendas[ValorTotal])",
-            "formatString": "\"€\"\\ #,0;-\"€\"\\ #,0;\"€\"\\ #,0",
+            "formatString": "\"R$\"\\ #,0;-\"R$\"\\ #,0;\"R$\"\\ #,0",
             "lineageTag": "d5cfab60-22c3-4e9c-8127-28e90f98d105"
           },
           {
             "name": "Faturamento 2018",
-            "expression": "CALCULATE([Faturamento], dCalendario[Año] = 2018)",
+            "expression": "CALCULATE([Faturamento], dCalendario[Ano] = 2018)",
             "formatString": "\"€\"\\ #,0;-\"€\"\\ #,0;\"€\"\\ #,0",
             "lineageTag": "4ec9501c-bd16-41c6-9bcf-4dcd6a9cbbe2"
           },

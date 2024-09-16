@@ -1310,6 +1310,24 @@
             "expression": "DISTINCTCOUNT(fVendas[cdProduto])",
             "formatString": "0",
             "lineageTag": "5e4915cc-367f-46d3-97a9-cadaa9b45cd7"
+          },
+          {
+            "name": "Valor Meta",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "SUM(fMetas[ValorMetas])",
+            "formatString": "\"R$\"\\ #,0;-\"R$\"\\ #,0;\"R$\"\\ #,0",
+            "lineageTag": "230797fd-5836-4937-81be-72afd4304cba"
+          },
+          {
+            "name": "Faturamento x Meta",
+            "expression": "DIVIDE([Faturamento] - [Valor Meta], [Valor Meta])",
+            "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+            "lineageTag": "a40a84d3-e4b2-4766-8610-1ebc918065b7"
           }
         ],
         "partitions": [

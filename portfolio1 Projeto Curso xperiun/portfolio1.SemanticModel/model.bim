@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.132.1053.0 (24.08)"
+        "value": "2.134.7447.1 (Main)"
       },
       {
         "name": "PBI_ProTooling",
@@ -1325,7 +1325,7 @@
           },
           {
             "name": "Faturamento x Meta",
-            "expression": "DIVIDE([Faturamento] - [Valor Meta], [Valor Meta])",
+            "expression": "DIVIDE( [Valor Meta] - [Faturamento], [Valor Meta])",
             "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
             "lineageTag": "a40a84d3-e4b2-4766-8610-1ebc918065b7"
           }
